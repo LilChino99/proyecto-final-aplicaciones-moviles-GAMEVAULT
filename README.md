@@ -102,31 +102,3 @@ com.example.gamevault/
     ├── util/ (PhotoFileProvider)
     └── theme/ (Color, Theme, Type)
 ```
-
----
-
-## 🛠️ Cómo Compilar y Ejecutar
-
-### Requisitos Previos:
-- Android Studio Ladybug / Jellyfish o superior (o Gradle 8.5+ CLI).
-- Android SDK 36 (Min SDK 26).
-
-### Comandos de Compilación:
-```powershell
-# Clonar el repositorio
-git clone https://github.com/LilChino99/proyecto-final.git
-cd proyecto-final
-
-# Compilar e instalar en emulador o celular conectado por USB
-.\gradlew.bat installDebug
-
-# Generar archivo .aab firmado para Google Play Store
-.\gradlew.bat bundleRelease
-
-# Generar archivo .apk firmado de instalación directa
-.\gradlew.bat assembleRelease
-```
-
-### Ubicación de los Binarios Firmados:
-- **APK Firmado:** `app/build/outputs/apk/release/app-release.apk`
-- **AAB Firmado:** `app/build/outputs/bundle/release/app-release.aab`
